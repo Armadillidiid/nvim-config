@@ -11,7 +11,7 @@ vim.api.nvim_set_keymap("n", "<C-p>", "<cmd>Telescope oldfiles<cr>", { noremap =
 -- Toggle auto-save
 vim.api.nvim_set_keymap("n", "<leader>n", ":ASToggle<CR>", {})
 
--- Vim surround 
+-- nvim-surround 
 vim.g["surround_no_mappings"] = 1
 vim.keymap.set("n", "ds", "<Plug>Dsurround")
 vim.keymap.set("n", "cs", "<Plug>Csurround")
