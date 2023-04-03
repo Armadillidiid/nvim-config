@@ -1,3 +1,4 @@
+if true then return {} end
 return {
   "codota/tabnine-nvim",
   build = "./dl_binaries.sh",
