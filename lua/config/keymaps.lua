@@ -27,8 +27,17 @@ map("n", "<c-n>", "<cmd>Telescope oldfiles<cr>")
 -- Toggle auto-save
 map("n", "<leader>n", ":ASToggle<CR>", { desc = "Toggle auto-save" })
 
---  Map <leader><space> to delete buffer
+--n  Map <leader><space> to delete buffer
 map("n", "<leader><space>", ':lua require("mini.bufremove").delete(0, false)<CR>', { desc = "Delete buffer" })
+
+-- Telescope project_root
+map("n", "<leader>pP", ":lua require'telescope'.extensions.project.project{}<CR>", { desc = "Telescope project",  noremap = true, silent = true })
+
+-- ProjectMgr
+map("n", "<leader>pp", ":ProjectMgr<CR>", { desc = "ProjectMgr" })
+
+-- ChatGPT mapping to open chat 
+map("n", "<leader>cc", ":ChatGPT<CR>", { desc = "ChatGPT" })
 
 -- nvim-surround
 vim.g["surround_no_mappings"] = 1
