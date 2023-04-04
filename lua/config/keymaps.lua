@@ -39,6 +39,10 @@ map("n", "<leader>pp", ":ProjectMgr<CR>", { desc = "ProjectMgr" })
 -- ChatGPT mapping to open chat 
 map("n", "<leader>cc", ":ChatGPT<CR>", { desc = "ChatGPT" })
 
+-- Find bugs with code using codeGPT
+map("v", "<leader>cp", ":Chat please fix any bugs and errors in the following code<CR>", { desc = "ChatGPTProblem" })
+map("x", "<leader>cp", ":Chat please fix any bugs and errors in the following code<CR>", { desc = "ChatGPTProblem" })
+
 -- nvim-surround
 vim.g["surround_no_mappings"] = 1
 map("n", "ds", "<Plug>Dsurround")
