@@ -37,7 +37,30 @@ return {
           }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
         }),
         sources = cmp.config.sources({
-          { name = "nvim_lsp" },
+          {
+            name = "nvim_lsp",
+            -- entry_filter = function(entry, context)
+            --   local kind = entry:get_kind()
+            --   local line = context.cursor.line
+            --   local col = context.cursor.col
+            --   local char_before_cursor = string.sub(line, col - 1, col - 1)
+            --
+            --   if char_before_cursor == "." then
+            --     if kind == 2 or kind == 5 then
+            --       return true
+            --     else
+            --       return false
+            --     end
+            --   elseif string.match(line, "^%s*%w*$") then
+            --     if kind == 3 or kind == 6 then
+            --       return true
+            --     else
+            --       return false
+            --     end
+            --   end
+            --   return true
+            -- end,
+          },
           { name = "luasnip" },
           { name = "buffer" },
           { name = "path" },
