@@ -1,6 +1,6 @@
 return {
   "zbirenbaum/copilot-cmp",
-  enabled  = false,
+  enabled  = true,
   dependencies = "copilot.lua",
   opts = {},
   config = function(_, opts)
